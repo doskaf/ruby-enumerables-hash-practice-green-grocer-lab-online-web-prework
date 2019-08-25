@@ -7,7 +7,8 @@ def consolidate_cart(cart)
       final_hash[element_name][:count] += 1
     else
       final_hash[element_name] = {
-        
+        count: 1,
+        price: element_hash
       }
       final_hash[:count] = 1
     end
